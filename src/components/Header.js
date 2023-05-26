@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 import themeList from '../data/themeList';
 import Logo from './Logo';
 import ThemeSwitcher from './ThemeSwitcher';
@@ -120,6 +121,14 @@ const HeaderStyles = styled.header`
   }
 `;
 export default function Header() {
+  const history = useNavigate();
+
+  const handleClick = () => {
+    history('/register');
+  };
+  const handleClick1 = () => {
+    history('/');
+  };
   const headerRef = useRef(null);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(
@@ -177,23 +186,58 @@ export default function Header() {
               )}
               <ul>
                 <li>
-                  <Link to="home" smooth activeClass="active" spy>
+                  <Link
+                    to="home"
+                    smooth
+                    activeClass="active"
+                    onClick={handleClick1}
+                    spy
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="services" smooth activeClass="active" spy>
+                  <Link
+                    to="services"
+                    smooth
+                    activeClass="active"
+                    onClick={handleClick1}
+                    spy
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" smooth activeClass="active" spy>
+                  <Link
+                    to="about"
+                    smooth
+                    activeClass="active"
+                    onClick={handleClick1}
+                    spy
+                  >
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="contact" smooth activeClass="active" spy>
+                  <Link
+                    to="contact"
+                    smooth
+                    activeClass="active"
+                    spy
+                    onClick={handleClick1}
+                  >
                     Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/register"
+                    smooth
+                    activeClass="active"
+                    spy
+                    onClick={handleClick}
+                  >
+                    Register
                   </Link>
                 </li>
               </ul>

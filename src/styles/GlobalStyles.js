@@ -53,6 +53,36 @@ img, svg{
   width: 100%;
   height: 100%;
 }
+.custom-header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    padding: 100px;
+}
+.main-body{
+  padding:50px 0px;
+}
+.cBWznK {
+    display: inline-block;
+    background: #212529;
+    padding: 1.5rem 3rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0px;
+}
+@media (max-width: 768px) {
+  .card-body {
+    padding: 20px;
+  }
+}
 `;
 
 export default GlobalStyles;
