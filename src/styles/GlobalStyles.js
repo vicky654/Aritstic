@@ -82,6 +82,11 @@ img, svg{
   .card-body {
     padding: 20px;
   }
+  .scroll {
+    height: 700px;
+    overflow-y: auto;
+  }
+
 }
 `;
 
