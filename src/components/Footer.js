@@ -58,10 +58,10 @@ function Footer() {
       <div className="container">
         <div className="footer__wrapper">
           <Link to="home" smooth>
-            <Logo className="footer__logo" />
+            <h2 style={{ color: '#fff' }}>BlackWing</h2>
           </Link>
           <ParagraphText className="footer__desc">
-            “Artistic” is a studio of some passionate photographer. Our Goal is
+            “BlackWing” is a studio of some passionate photographer. Our Goal is
             to capture your experience.
           </ParagraphText>
           <div className="footer__links">
@@ -89,7 +89,7 @@ function Footer() {
             </ul>
           </div>
           <ParagraphText className="footer__copyright">
-            © Artistic Creative {new Date().getFullYear()}. All rights reserved
+            © BlackWing Creative {new Date().getFullYear()}. All rights reserved
           </ParagraphText>
         </div>
       </div>

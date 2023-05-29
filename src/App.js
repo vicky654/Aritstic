@@ -4,21 +4,19 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ThemeContext from './contexts/ThemeContext';
 import LandingPage from './pages/LandingPage';
 import RegisterPage from './pages/RegisterPage';
+import AlternateRegisterPage from './pages/AlternateRegisterPage';
 
 import GlobalStyles from './styles/GlobalStyles';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-const AlternateLandingPage = () => <div>Alternate Landing Page</div>;
-const AlternateRegisterPage = () => <div>Alternate Register Page</div>;
 
 function App() {
   const { theme } = useContext(ThemeContext);
   const getCurrentUniverseTime = () => new Date();
   const universeTime = getCurrentUniverseTime();
   const desiredTimeStart = new Date();
-  desiredTimeStart.setHours(1, 40, 0); // Set desired start time to 1:40 AM
+  desiredTimeStart.setHours(10, 50, 0); // Set desired start time to 1:40 AM
   const desiredTimeEnd = new Date();
-  desiredTimeEnd.setHours(2, 0, 0); // Set desired end time to 2:00 AM
+  desiredTimeEnd.setHours(11, 0, 0); // Set desired end time to 2:00 AM
   const shouldShowLandingPage =
     universeTime >= desiredTimeStart && universeTime <= desiredTimeEnd;
 
@@ -29,9 +27,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={
-              shouldShowLandingPage ? <LandingPage /> : <AlternateLandingPage />
-            }
+            element={shouldShowLandingPage ? <LandingPage /> : <LandingPage />}
           />
           <Route
             path="/register"

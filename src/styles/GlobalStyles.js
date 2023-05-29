@@ -78,6 +78,27 @@ img, svg{
     border: none;
     border-radius: 0px;
 }
+.not-found-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-image {
+  max-width: 100%;
+  height: auto;
+}
+.section-title{
+  font-size: 23px;
+    font-weight: 300;
+}
+${
+  '' /* .about__desc {
+    margin-bottom: 2rem;
+    max-width: 300px;
+  } */
+}
 @media (max-width: 768px) {
   .card-body {
     padding: 20px;

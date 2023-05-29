@@ -28,7 +28,7 @@ function ServicesSection() {
   return (
     <ServicesSectionStyles id="services">
       <div className="container">
-        <SectionTitle className="services__title">Our Services</SectionTitle>
+        <SectionTitle className=" ">Our Services</SectionTitle>
         <div className="services__items">
           <ServiceItem
             icon={<RiImageEditLine />}

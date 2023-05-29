@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import NewsletterSection from '../components/NewsletterSection';
 import ServicesSection from '../components/services/ServicesSection';
 import TeamSection from '../components/team/TeamSection';
+import PrivacyPolicy from '../components/PrivacyPolicy';
 
 function LandingPage() {
   return (
@@ -18,6 +19,7 @@ function LandingPage() {
       <TeamSection />
       <NewsletterSection />
       <ContactSection />
+      <PrivacyPolicy />
       <Footer />
     </>
   );

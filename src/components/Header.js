@@ -151,17 +151,26 @@ export default function Header() {
   }, [isNavOpen]);
 
   useEffect(() => {
-    window.addEventListener('resize', () => {
+    const handleResize = () => {
       setIsMobile(window.matchMedia('(max-width: 768px)').matches);
-    });
-    window.addEventListener('scroll', () => {
+    };
+
+    const handleScroll = () => {
       if (headerRef.current && window.scrollY > 100) {
         headerRef.current.style.boxShadow =
           '0px 0px 10px 0px rgba(0, 0, 0, 0.5)';
-      } else {
+      } else if (headerRef.current) {
         headerRef.current.style.boxShadow = 'none';
       }
-    });
+    };
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
@@ -169,7 +178,7 @@ export default function Header() {
       <div className="container">
         <div className="navigation">
           <Link to="home" smooth>
-            <Logo />
+            <h2>BlackWing</h2>
           </Link>
           <div className="navMenu">
             <nav className={isMobile && isNavOpen ? 'open' : undefined}>

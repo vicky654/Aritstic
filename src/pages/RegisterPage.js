@@ -8,9 +8,7 @@ export default function RegisterPage() {
       {/* <Header /> */}
       <header className="custom-header">
         <div className="container">
-          <Link to="/">
-            <h1 style={{ color: '#fff' }}>Register Devices</h1>
-          </Link>
+          <h1 style={{ color: '#fff' }}>Register Devices</h1>
         </div>
       </header>
       <div className="scroll">

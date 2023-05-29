@@ -1,8 +1,8 @@
 ![](./readmeImg/banner.png)
 
-# Artistic 📸
+# BlackWing 📸
 
-**Live preview: [https://wc-artistic.netlify.app/](https://wc-artistic.netlify.app/)**
+**Live preview: [https://wc-BlackWing.netlify.app/](https://wc-BlackWing.netlify.app/)**
 
 **Watch on YouTube: [https://youtu.be/DTR2IbNBfPA](https://youtu.be/DTR2IbNBfPA)**
 
@@ -18,7 +18,7 @@ Like my works and want to support me?
 
 ## Project Description
 
-Artistic is a landing page for a photography studio. This is a well-designed and `responsive` landing page with `dark mode` feature. The main purpose of this project is to show how to create a landing page with `dark mode` feature using `ReactJs`.
+BlackWing is a landing page for a photography studio. This is a well-designed and `responsive` landing page with `dark mode` feature. The main purpose of this project is to show how to create a landing page with `dark mode` feature using `ReactJs`.
 We will be using React Context API to toggle `dark mode` feature. Hope you enjoy it!.
 
 ## What we are going to learn/use

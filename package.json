@@ -1,5 +1,5 @@
 {
-  "name": "artistic",
+  "name": "BlackWing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,7 @@
     "bootstrap": "^5.0.1",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.11.2",
